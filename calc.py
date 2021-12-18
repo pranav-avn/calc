@@ -21,7 +21,6 @@ class MainWindow(qtw.QWidget):
         #digit display
         self.digit_display = qtw.QLabel('0', self)
         self.digit_display.setAlignment(qtc.Qt.AlignRight)
-        #self.digit_display.setStyleSheet("border: 1px solid black;")
         self.digit_display.setFont(qtg.QFont('Helvetica Neue', 72))
         self.digit_display.setGeometry(5,15,350,90)
 
@@ -123,6 +122,7 @@ class MainWindow(qtw.QWidget):
             else:
                 self.digit_display.setText(pressed)
 
+                
 if __name__ == "__main__":
     import sys
     app = qtw.QApplication(sys.argv)
